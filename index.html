@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>U2-W3-D1 - Esercizi</title>
+    <style>
+      * {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Compila il form</h1>
+    </header>
+    <main>
+      <form id="petForm">
+        <div>
+          <label for="petname"> Pet Name </label>
+        </div>
+        <input type="text" id="petname" />
+        <div>
+          <label for="ownername"> Owner's Name </label>
+        </div>
+        <input type="text" id="ownername" />
+        <div>
+          <label for="species"> Species (dog, cat, bunny) </label>
+        </div>
+        <input type="text" id="species" />
+        <div>
+          <label for="breed"> Breed (labrador, cocker, dalmata) </label>
+        </div>
+        <input type="text" id="breed" /><br />
+
+        <button type="button" onclick="createPet()">Invia</button>
+      </form>
+
+      <h2>Pet List</h2>
+      <ul id="petList"></ul>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
